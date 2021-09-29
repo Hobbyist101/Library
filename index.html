@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Library </title>
+</head>
+<body id='body'>
+    <h1> Library </h1>
+    <div class="newBook">
+        <button id="newBtn"> New Book!</button>
+    </div>
+    <div id="popUp">    
+        <form id="form">
+            <div id="modal-header">
+                <span class="close">&times;</span>
+                <ledgend> New Book </ledgend>
+            </div>
+            <div id='textInput'> 
+                <p><input type='text' id='title' name='title' placeholder='Title(required)' required></p>
+                <p><input type='text' id='author' name='author' placeholder='Author'></p>
+                <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+            </div>
+            <div id='checkBox'>
+                <p><label id="read"> Read: </label><input name='read' type='checkbox' id='readBtn' value='yes'></p>
+            </div>
+            <button type='submit' form='form' id="addBtn"> Add </button>
+        </form>
+    </div>
+    <div id="libraryDisplay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
